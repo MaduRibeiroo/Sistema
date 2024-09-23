@@ -8,6 +8,17 @@ import { produtos } from "../../dados/mockProdutos";
 export default function TelaCadastroProduto(props) {
     const [exibirTabela, setExibirTabela] = useState(true);
     const [listaDeProdutos, setListaDeProdutos] = useState(produtos);
+    const [modoEdicao, setModoEdicao] = useState(false);
+    const [produtoSelecionado, setProdutoSelecionado] = useState({
+        codigo:0,
+        descricao:"",
+        precoCusto:0,
+        precoVenda:0,
+        qtdEstoque:0,
+        urlImagem:"",
+        dataValidade:""
+
+    });
 
    
     return (
@@ -22,10 +33,18 @@ export default function TelaCadastroProduto(props) {
                     exibirTabela ?
                         <TabelaProdutos listaDeProdutos={listaDeProdutos}
                                         setListaDeProdutos={setListaDeProdutos} 
-                                        setExibirTabela={setExibirTabela} /> :
+                                        setExibirTabela={setExibirTabela}
+                                        setModoEdicao={setModoEdicao}
+                                        setProdutoSelecionado={setProdutoSelecionado} /> :
                         <FormCadProdutos listaDeProdutos={listaDeProdutos}
                                          setListaDeProdutos={setListaDeProdutos}
-                                         setExibirTabela={setExibirTabela} />
+                                         setExibirTabela={setExibirTabela}
+                                         produtoSelecionado={produtoSelecionado}
+                                         setProdutoSelecionado={setProdutoSelecionado}
+                                         modoEdicao={modoEdicao}
+                                         setModoEdicao={setModoEdicao}
+
+                                         />
                 }
             </Pagina>
         </div>
