@@ -9,10 +9,10 @@ export default function TabelaFornecedores(props) {
     }
 
     function excluirFornecedor(fornecedor){
-        if(window.confirm("Deseja realmente excluir o fornecedor " + fornecedor.nome + "de CPF " + fornecedor.cpf)){
+        if(window.confirm("Deseja realmente excluir o fornecedor " + fornecedor.nome + "de CNPJ " + fornecedor.cnpj)){
             props.setListaDeFornecedores(props.listaDeFornecedores.filter(
                 (fornecedores)=>{
-                            return fornecedores.cpf != fornecedor.cpf     
+                            return fornecedores.cnpj != fornecedor.cnpj     
                         }));
         }
     }
