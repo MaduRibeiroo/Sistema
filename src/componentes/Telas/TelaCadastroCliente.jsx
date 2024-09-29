@@ -18,7 +18,6 @@ export default function TelaCadastroCliente(props) {
         email: "",
         senha: ""
     });
-
    
     return (
         <div>

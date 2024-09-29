@@ -1,4 +1,4 @@
-export const produtos = [
+export const clientes = [
     {
         "cpf":"123.456.789-10",
         "nome":"Maria Eduarda",
