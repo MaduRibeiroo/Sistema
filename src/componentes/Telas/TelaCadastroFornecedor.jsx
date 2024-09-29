@@ -8,7 +8,7 @@ import { fornecedor } from "../../dados/mockFornecedores";
 
 export default function TelaCadastroFornecedor(props) {
     const [exibirTabela, setExibirTabela] = useState(true);
-    const [listaDeFornecedores, setListaDeFornecedores] = useState(fornecedores);
+    const [listaDeFornecedores, setListaDeFornecedores] = useState(fornecedor);
     const [modoEdicao, setModoEdicao] = useState(false);
     const [fornecedorSelecionado, setFornecedorSelecionado] = useState({
         cnpj: "",
