@@ -3,7 +3,6 @@ import FormCadFornecedor from "./Formularios/FormCadFornecedor";
 import Pagina from "../layouts/Pagina";
 import { useState } from "react";
 import TabelaFornecedores from "./Tabelas/TabelaFornecedor";
-import FormCadFornecedor from "./Formularios/FormCadFornecedor";
 import { fornecedor } from "../../dados/mockFornecedores";
 
 export default function TelaCadastroFornecedor(props) {

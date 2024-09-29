@@ -11,8 +11,8 @@ export default function TabelaUsuario(props) {
     function excluirUsuario(usuario){
         if(window.confirm("Deseja realmente excluir o usuário " + usuario.nome + "de CPF " + usuario.cpf)){
             props.setListaDeUsuarios(props.listaDeUsuarios.filter(
-                (usuario)=>{
-                            return usuario.cpf != usuario.cpf     
+                (usuarios)=>{
+                            return usuarios.cpf != usuario.cpf     
                         }));
         }
     }
@@ -42,8 +42,6 @@ export default function TabelaUsuario(props) {
                                     <tr>
                                         <td>{usuario.cpf}</td>
                                         <td>{usuario.nome}</td>
-                                        <td>{usuario.endereco}</td>
-                                        <td>{usuario.bairro}</td>
                                         <td>{usuario.telefone}</td>
                                         <td>{usuario.email}</td>
                                         <td>{usuario.senha}</td>

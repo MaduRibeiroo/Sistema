@@ -118,7 +118,7 @@ export default function FormCadFornecedor(props) {
                 </Form.Group>
             </Row>
             <Row className="mb-4">
-                <Form.Group as={Col} md="4">
+                <Form.Group as={Col} md="12">
                     <Form.Label>Logo</Form.Label>
                     <Form.Control
                         required
@@ -126,10 +126,9 @@ export default function FormCadFornecedor(props) {
                         id="logo"
                         name="logo"
                         value={fornecedor.logo}
-                        disabled={props.modoEdicao}
                         onChange={manipularMudanca}
                     />
-                    <Form.Control.Feedback type='invalid'>Por favor, informe a logo da empresa do fornecedor!</Form.Control.Feedback>
+                    <Form.Control.Feedback type="invalid">Por favor, informe a logo do fornecedor!</Form.Control.Feedback>
                 </Form.Group>
             </Row>
             <Row className='mt-2 mb-2'>

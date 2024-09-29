@@ -41,7 +41,7 @@ export default function TabelaFornecedores(props) {
                             props.listaDeFornecedores?.map((fornecedor) => {
                                 return (
                                     <tr>
-                                        <td>{fornecedor.cpf}</td>
+                                        <td>{fornecedor.cnpj}</td>
                                         <td>{fornecedor.nome}</td>
                                         <td>{fornecedor.telefone}</td>
                                         <td>{fornecedor.endereco}</td>
