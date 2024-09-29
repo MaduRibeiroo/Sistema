@@ -57,7 +57,7 @@ export default function FormCadUsuario(props) {
                         type="text"
                         id="cpf"
                         name="cpf"
-                        value={fornecedor.cpf}
+                        value={usuario.cpf}
                         disabled={props.modoEdicao}
                         onChange={manipularMudanca}
                     />
@@ -110,7 +110,7 @@ export default function FormCadUsuario(props) {
                         type="text"
                         id="senha"
                         name="senha"
-                        value={fornecedor.senha}
+                        value={usuario.senha}
                         onChange={manipularMudanca}
                     />
                     <Form.Control.Feedback type="invalid">Por favor, informe a senha do usuário!</Form.Control.Feedback>
